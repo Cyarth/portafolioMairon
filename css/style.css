@@ -14,28 +14,45 @@ img {
     text-decoration: none;
     color: black;
 }
-
-/* btn de ir aarriba*/
-#button-up{
+#button-up {
     width: 60px;
     height: 60px;
-    background: #46a2fd;
+    background: rgb(70 162 253);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(255 255 255);
     border-radius: 50%;
     font-size: 20px;
     position: fixed;
     bottom: 50px;
     right: 50px;
     cursor: pointer;
-    border: 4px solid transparent;
+    border: 4px solid rgb(0 0 0 / 0%);
     transition: all 300ms ease;
     transform: scale(0);
 }
 
-#button-up:hover{
-    transform: scale(1.1);
-    border-color: rgba(0,0,0,0.1);
-}
+.scrollToTopBtn {
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all .5s ease
+  }
