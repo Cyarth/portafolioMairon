@@ -1,9 +1,27 @@
 img {
-    width: 500px;
+    width: 100%;
 }
-
 .container{
     max-width: 900px;
+}
+
+
+.banner{
+
+    padding: 1rem 0 3rem 0;
+}
+
+
+.banner.nelson{
+    background-image: url(../img/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 6vh;
+    min-height: 1rem;
+
+
+    
+
 }
 
 #imagen-cuatro{
@@ -36,4 +54,7 @@ img {
 #button-up:hover{
     transform: scale(1.1);
     border-color: rgba(0,0,0,0.1);
+}
+body{
+    background: url(../img/back.jpg);
 }
